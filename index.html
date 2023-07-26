@@ -13,36 +13,95 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        fruit: '#F85559',
+                        text: 'rgba(18, 18, 18, 0.60)',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
     <style>
-        .lato{
+        .lato {
             font-family: 'Lato', sans-serif;
+        }
+
+        .fruit-primary {
+            color: #F85559;
+        }
+
+        .fruit-secondary {
+            color: rgba(18, 18, 18, 0.60);
         }
     </style>
 </head>
 
 <body class="lato">
     <!-- header section -->
-    <header>
-
+    <header class="max-w-7xl mx-auto">
+        <!-- navbar -->
+        <section class="md:mt-5">
+            <div class="navbar bg-fruit text-white rounded-full">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex items-center btn btn-ghost normal-case">
+                        <img src="images/logo.png" class="h-8" alt="">
+                        <a class="text-xl">Fruit Burst</a>
+                    </div>
+                </div>
+                
+                <div class="navbar-end hidden lg:flex md:flex">
+                    <div class="join">
+                        <input class="input input-bordered join-item rounded-full" placeholder="Search here"/>
+                        <button class="btn join-item rounded-r-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                              </svg>
+                              
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </section>
     </header>
 
     <!-- main section -->
-    <main>
+    <main class="max-w-7xl mx-auto">
 
     </main>
 
     <!-- footer -->
     <footer>
-        
+
     </footer>
 </body>
 
